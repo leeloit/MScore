@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>M-score 评估与培训工具</title>
+  <title>M-Score clinical assessment system</title>
   <style>
     :root {
       --bg: #f6f8fb;
@@ -281,212 +281,222 @@
 </head>
 <body>
   <header>
-    <h1>M-score 评估与培训工具</h1>
-    <p>用于非哺乳期乳腺炎 / 肉芽肿性乳腺炎的疾病严重程度评估、随访记录和评分培训。本工具为研究与教学用途，不替代临床判断。</p>
+    <h1>M-Score clinical assessment system and training</h1>
+    <p>Our research group has developed the M-score clinical assessment system and its corresponding standardized evaluation process to 
+      standardize the assessment of the severity of symptoms and treatment efficacy in patients with non-lactational mastitis(NLM). 
+      The system uses several common clinical symptoms and complaints found in patients with NLM as evaluation items, 
+      divided into five modules: pain, lump, erythema, ulceration or fistula, and quality of life.</p>
   </header>
 
   <nav>
     <div class="nav-inner">
-      <a href="#overview">工具简介</a>
-      <a href="#definitions">评分定义</a>
-      <a href="#calculator">在线评分</a>
-      <a href="#training">培训病例</a>
-      <a href="#citation">引用与说明</a>
+      <a href="#overview">Introduction</a>
+      <a href="#definitions">Module definition</a>
+      <a href="#calculator">Online testing</a>
+      <a href="#training">Cases training</a>
+      <a href="#citation">Citation and statement</a>
     </div>
   </nav>
 
   <main>
     <section id="overview" class="card">
-      <h2>一、工具简介</h2>
-      <p>M-score 由病灶大小、红斑、瘘管/溃破、疼痛或压痛、生活质量影响等维度构成，用于描述患者当前疾病严重程度。M-active-score 进一步聚焦炎症活动性表现。</p>
+        <h2>ⅠIntroduction</h2>
+      <p>The M-score is composed of modules such as mass size, erythema, fistulae/ulceration, pain or tenderness, and impact on quality of life, 
+        and is used to describe the patient’s current disease severity. 
+        The M-active-score focuses specifically on manifestations of inflammatory activity(erythema, fistulae/ulceration, pain).</p>
       <div class="note">
-        <strong>推荐使用场景：</strong>基线评估、治疗后随访、疗效观察、研究数据采集、评分者培训。
+        <strong>Recommended context for assessment：</strong>Baseline assessment, followups after standard treatment, observation of treatment effecacy,
+        research documentation, rater training.
       </div>
       <div class="warning">
-        <strong>重要说明：</strong>请勿在本网页中输入任何可识别患者身份的信息。若上传或展示病例图片，请先完成去标识化处理。
+        <strong>Statement：</strong>No information that could identify patients has been included on this webpage. All clinical images uploaded or displayed have been de-identified.
       </div>
     </section>
 
     <section id="definitions" class="card">
-      <h2>二、M-score 条目定义</h2>
+      <h2>Ⅱ M-score module definition</h2>
 
       <div class="grid">
         <div class="item-card">
-          <h3>1. 病灶大小</h3>
-          <p>测量乳房肿块的最大径线。查体时四指并拢轻柔触诊，先健侧后患侧，先正常区域后病灶区域。若存在多个肿块，需将肿块最大径线相加。</p>
-          <p class="muted">仅针对查体可触及病灶；不纳入单纯影像学病灶；正常腺体增生结节或纤维腺瘤不予计算。</p>
+          <h3>1. Mass size</h3>
+          <p>Measure the greatest diameter of the breast lump. During the examination, use four fingers held together to palpate gently, 
+            starting with the unaffected side and then the affected side, and examining the normal areas before the affected areas. 
+            If there are multiple lumps, add their greatest diameters together.
+          </p>
+          <p class="muted">This applies only to lesions detectable on physical examination; lesions identified solely on imaging are excluded; 
+            nodules resulting from normal glandular hyperplasia or fibroadenomas are not counted.</p>
           <table>
-            <tr><th>分值</th><th>定义</th></tr>
-            <tr><td>0 分</td><td>无触诊肿块</td></tr>
-            <tr><td>1 分</td><td>触诊肿块 ≤ 3 cm</td></tr>
-            <tr><td>2 分</td><td>触诊肿块 &gt; 3 cm</td></tr>
+            <tr><th>Score</th><th>Examination result</th></tr>
+            <tr><td>0 </td><td>No palpable mass</td></tr>
+            <tr><td>1 </td><td>Palpable mass ≤ 3 cm</td></tr>
+            <tr><td>2 </td><td>Palpable mass &gt; 3 cm</td></tr>
           </table>
         </div>
 
         <div class="item-card">
-          <h3>2. 红斑</h3>
-          <p>视诊为主，结合当前症状。触诊病灶表面皮肤并与周围正常皮肤比较，确认有无充血发热。</p>
-          <p class="muted">血管充盈征：轻柔按压红斑中心区域，移开手指后按压处皮肤由白转红，提示活动性红斑。需与恢复期色素沉着鉴别。</p>
+          <h3>2. Erythema</h3>
+          <p>The examination focuses primarily on visual inspection, taking current symptoms into account. Palpate the skin over the affected area and compare it with the surrounding healthy skin to determine whether there is any redness or warmth.</p>
+          <p class="muted">Vascular filling sign: Gently pressing the centre of the erythema; when the finger is removed, the skin at the site of pressure changes from white to red, indicating active erythema. This must be distinguished from post-recovery hyperpigmentation.</p>
           <table>
-            <tr><th>分值</th><th>定义</th></tr>
-            <tr><td>0 分</td><td>无活动性红斑</td></tr>
-            <tr><td>2 分</td><td>有活动性红斑</td></tr>
+            <tr><th>Score</th><th>Examination result</th></tr>
+            <tr><td>0 </td><td>No significant erythema</td></tr>
+            <tr><td>2 </td><td>Significant erythema</td></tr>
           </table>
         </div>
 
         <div class="item-card">
-          <h3>3. 瘘管 / 溃破</h3>
-          <p>检查乳房有无皮肤破溃或窦道。视诊为主，并询问患者自上次评估后有无流脓及愈合情况。</p>
-          <p class="muted">若初诊无窦道，由穿刺引起的“窦道”不认为是窦道形成。</p>
+          <h3>3. Fistula/ulceration</h3>
+          <p>Check the breast for any skin breakdown or fistulae. This is primarily a visual examination, and the patient should be asked about any discharge of pus and the healing process since the last assessment.</p>
+          <p class="muted">If no fistula is present at the initial consultation, a ‘fistula’ caused by puncture is not considered to constitute the formation of a fistula.</p>
           <table>
-            <tr><th>分值</th><th>定义</th></tr>
-            <tr><td>0 分</td><td>无瘘管 / 溃破</td></tr>
-            <tr><td>1 分</td><td>近一周有破溃流脓，但查体未见</td></tr>
-            <tr><td>2 分</td><td>查体见破溃流脓</td></tr>
+            <tr><th>Score</th><th>Examination result</th></tr>
+            <tr><td>0 </td><td>No fistula/ulceration</td></tr>
+            <tr><td>1 </td><td>There has been pus discharge over the past week, but the physical examination revealed no signs of this</td></tr>
+            <tr><td>2 </td><td>On examination, ulceration and purulent discharge were observed</td></tr>
           </table>
         </div>
 
         <div class="item-card">
-          <h3>4. 疼痛 / 压痛</h3>
-          <p>采用视觉模拟评分 VAS。0 分为无痛，10 分为此前从未体验过的难以忍受的剧烈疼痛。</p>
-          <p class="muted">M-score-a 使用患者当前自觉疼痛；M-score-t 使用查体压痛。每次评估时建议提醒患者上次 VAS 评分，或以对侧乳房对称位置作为 0 分参照。</p>
+          <h3>4. Pain / Tenderness</h3>
+          <p>The Visual Analogue Scale (VAS) was used. A score of 0 indicates no pain, whilst a score of 10 indicates an unbearable, intense pain unlike anything previously experienced.</p>
+          <p class="muted">The M-score-a is based on the patient’s current subjective pain; the M-score-t is based on tenderness detected on physical examination. At each assessment, it is recommended to remind the patient of their previous VAS score, or to use the corresponding area on the opposite breast as a 0-point reference.</p>
           <table>
-            <tr><th>分值</th><th>定义</th></tr>
-            <tr><td>0 分</td><td>VAS 0–3</td></tr>
-            <tr><td>1 分</td><td>VAS 4–6</td></tr>
-            <tr><td>2 分</td><td>VAS 7–10</td></tr>
+            <tr><th>Score</th><th>Examination result</th></tr>
+            <tr><td>0 </td><td>VAS 0–3</td></tr>
+            <tr><td>1 </td><td>VAS 4–6</td></tr>
+            <tr><td>2 </td><td>VAS 7–10</td></tr>
           </table>
         </div>
 
         <div class="item-card">
-          <h3>5. 生活质量影响</h3>
-          <p>询问疾病对患者生活质量的影响，包括工作、日常活动、穿衣、睡眠、伤口处理和是否需要治疗介入等。</p>
+          <h3>5. Quality of life</h3>
+          <p>Ask about the impact of the condition on the patient’s quality of life, including work, daily activities, dressing, sleep, wound care and whether any medical intervention is required.</p>
           <table>
-            <tr><th>分值</th><th>定义</th></tr>
-            <tr><td>0 分</td><td>无影响</td></tr>
-            <tr><td>1 分</td><td>轻度影响</td></tr>
-            <tr><td>2 分</td><td>重度影响</td></tr>
+            <tr><th>Score</th><th>Examination result</th></tr>
+            <tr><td>0 </td><td>No ima+pact</td></tr>
+            <tr><td>1 </td><td>Mild impact</td></tr>
+            <tr><td>2 </td><td>Severe impact</td></tr>
           </table>
         </div>
       </div>
     </section>
 
     <section class="card">
-      <h2>三、计算规则</h2>
+      <h2>Ⅲ  Calculation rules</h2>
       <table>
-        <tr><th>指标</th><th>计算规则</th></tr>
-        <tr><td>M-score-a</td><td>病灶大小 + 红斑 + 瘘管/溃破 + 疼痛（患者自评） + 生活质量影响</td></tr>
-        <tr><td>M-score-t</td><td>病灶大小 + 红斑 + 瘘管/溃破 + 疼痛（压痛） + 生活质量影响</td></tr>
-        <tr><td>M-active-score</td><td>红斑 + 瘘管/溃破 + 疼痛（压痛）</td></tr>
-        <tr><td>建议 Resolution</td><td>M-score-t ≤ 1；若无法准确评估压痛，可参考 M-score-a ≤ 1</td></tr>
-        <tr><td>建议 Inflammatory remission</td><td>M-active-score = 0</td></tr>
+        <tr><th>Index</th><th>Calculation rules</th></tr>
+        <tr><td>M-score-a</td><td>Mass size + Erythema + Fistula/ulceration + Pain（patient self-reportde） + Quality of life</td></tr>
+        <tr><td>M-score-t</td><td>Mass size + Erythema + Fistula/ulceration + Tenderness + Quality of life</td></tr>
+        <tr><td>M-active-score</td><td>Erythema + Fistula/ulceration + Tenderness</td></tr>
+        <tr><td>Recommandation of Resolution definition</td><td>M-score-t ≤ 1；If tenderness cannot be accurately assessed, use M-score-a ≤ 1 as a reference</td></tr>
+        <tr><td>Recommandation of inflammatory remission definition</td><td>M-active-score = 0</td></tr>
       </table>
     </section>
 
     <section id="calculator" class="card">
-      <h2>四、在线评分器</h2>
-      <p class="muted">请选择各条目分值，系统将自动计算 M-score-a、M-score-t 和 M-active-score。</p>
+      <h2>Ⅳ Online Scorer</h2>
+      <p class="muted">Please select the weighting for each item; the system will automatically calculate the M-score-a, M-score-t and M-active-score.</p>
 
-      <label for="mass">病灶大小</label>
+      <label for="mass">Mass size</label>
       <select id="mass">
-        <option value="0">0 分：无触诊肿块</option>
-        <option value="1">1 分：触诊肿块 ≤ 3 cm</option>
-        <option value="2">2 分：触诊肿块 &gt; 3 cm</option>
+        <option value="0">0 ：No palpable mass</option>
+        <option value="1">1 ：palpable mass ≤ 3 cm</option>
+        <option value="2">2 ：palpable mass &gt; 3 cm</option>
       </select>
 
-      <label for="erythema">红斑</label>
+      <label for="erythema">Erythema</label>
       <select id="erythema">
-        <option value="0">0 分：无活动性红斑</option>
-        <option value="2">2 分：有活动性红斑</option>
+        <option value="0">0 分：No significant erythema</option>
+        <option value="2">2 分：Significant erythema</option>
       </select>
 
-      <label for="fistula">瘘管 / 溃破</label>
+      <label for="fistula">Fistula/Ulceration</label>
       <select id="fistula">
-        <option value="0">0 分：无瘘管 / 溃破</option>
-        <option value="1">1 分：近一周有破溃流脓，但查体未见</option>
-        <option value="2">2 分：查体见破溃流脓</option>
+        <option value="0">0 ：No fistula/ulceration</option>
+        <option value="1">1 ：There has been pus discharge over the past week, but the physical examination revealed no signs of this</option>
+        <option value="2">2 ：On examination, ulceration and purulent discharge were observed</option>
       </select>
 
-      <label for="painSelf">疼痛：患者自评 VAS</label>
+      <label for="painSelf">Pain(patient self-reported) VAS</label>
       <select id="painSelf">
-        <option value="0">0 分：VAS 0–3</option>
-        <option value="1">1 分：VAS 4–6</option>
-        <option value="2">2 分：VAS 7–10</option>
+        <option value="0">0 ：VAS 0–3</option>
+        <option value="1">1 ：VAS 4–6</option>
+        <option value="2">2 ：VAS 7–10</option>
       </select>
 
-      <label for="painTender">疼痛：查体压痛 VAS</label>
+      <label for="painTender">Tenderness VAS</label>
       <select id="painTender">
-        <option value="0">0 分：VAS 0–3</option>
-        <option value="1">1 分：VAS 4–6</option>
-        <option value="2">2 分：VAS 7–10</option>
+        <option value="0">0 ：VAS 0–3</option>
+        <option value="1">1 ：VAS 4–6</option>
+        <option value="2">2 ：VAS 7–10</option>
       </select>
 
-      <label for="qol">生活质量影响</label>
+      <label for="qol">Quality of life</label>
       <select id="qol">
-        <option value="0">0 分：无影响</option>
-        <option value="1">1 分：轻度影响</option>
-        <option value="2">2 分：重度影响</option>
+        <option value="0">0 ：No impact</option>
+        <option value="1">1 ：Mild impact</option>
+        <option value="2">2 ：Severe impact</option>
       </select>
 
-      <button onclick="calculateScore()">计算评分</button>
-      <button class="secondary" onclick="resetCalculator()">清空</button>
-      <button class="secondary" onclick="window.print()">打印</button>
+      <button onclick="calculateScore()">Calculate</button>
+      <button class="secondary" onclick="resetCalculator()">Clear</button>
+      <button class="secondary" onclick="window.print()">Print</button>
 
       <div id="scoreResult" class="result-box"></div>
     </section>
 
     <section id="training" class="card">
-      <h2>五、培训病例</h2>
-      <p class="muted">阅读病例后，可先自行评分，再点击“查看标准答案”。图片位置可替换为已去标识化的临床照片或示意图。</p>
+      <h2>ⅴ Cases training</h2>
+      <p class="muted">After reading the case study, you may first mark your own answers and then click ‘View the correct answers’.</p>
 
       <div class="case-box">
         <h3>Case 1</h3>
-        <div class="placeholder">图片参考：请替换为去标识化图片</div>
-        <p>47岁女性，诉确诊非哺乳期乳腺炎半年，B超提示 4 × 4 cm 良性肿块，患者 1 周前接受病灶内注射。查体：触诊肿块大小 6 × 4 cm，血管充盈征阴性，可见病灶内注射针口结痂，近一周无破溃流脓，疼痛自评 3 分，压痛 4 分，日常工作生活中偶尔会刺痛，无需频繁处理伤口，生活质量影响轻度。</p>
-        <button onclick="toggleAnswer('answer1')">查看标准答案</button>
+        <div class="placeholder">Figure refference</div>
+        <p>A 47-year-old woman presented with a six-month history of diagnosed non-lactational mastitis. An ultrasound scan revealed a 4 × 4 cm benign mass; the patient underwent an intralesional injection one week ago. Physical examination: On palpation, the mass measured 6 × 4 cm; the vascular filling sign was negative; a scab was visible at the site of the intra-lesional injection; there had been no ulceration or pus discharge in the past week; the patient rated her pain as 3 and tenderness as 4; she experienced occasional stabbing pain during daily work and activities; frequent wound care was not required; and her quality of life was mildly affected.</p>
+        <button onclick="toggleAnswer('answer1')">View the correct answers</button>
         <div id="answer1" class="case-answer">
-          <p><strong>标准答案：</strong></p>
-          <p>M-score-a = 病灶大小 2 分 + 红斑 0 分 + 瘘管/溃破 0 分 + 疼痛（患者自评）0 分 + 生活质量影响 1 分 = <strong>3 分</strong>。</p>
-          <p>M-score-t = 病灶大小 2 分 + 红斑 0 分 + 瘘管/溃破 0 分 + 疼痛（压痛）1 分 + 生活质量影响 1 分 = <strong>4 分</strong>。</p>
-          <p><strong>解释：</strong>病灶内注射针口结痂，近一周无破溃流脓，说明愈合倾向，瘘管/溃破记为 0 分。1 周前接受病灶内注射，皮肤轻微瘀斑，未见活动性发炎，血管充盈征阴性，红斑记为 0 分。</p>
+          <p><strong>Correct answers：</strong></p>
+          <p>M-score-a = Mass size 2 points + Erythema 0 points + Fistula/ulceration 0 points + Pain (patient self-reported) 0 points + Impact on quality of life 1 point = <strong>3 </strong>。</p>
+          <p>M-score-t = Mass size: 2 points + Erythema: 0 points + Fistula/ulceration: 0 points + Pain (tenderness): 1 point + Impact on quality of life: 1 point = <strong>4 </strong>。</p>
+          <p><strong>Explanation：</strong>The injection site within the lesion has formed a scab; there has been no ulceration or pus discharge for nearly a week, indicating a tendency towards healing; the score for fistula/ulceration is 0. An intralesional injection was administered one week ago; there is slight skin bruising, no signs of active inflammation, and negative capillary refill; the score for erythema is 0.</p>
         </div>
       </div>
 
       <div class="case-box">
         <h3>Case 2</h3>
-        <div class="placeholder">图片参考：请替换为去标识化图片</div>
-        <p>33岁女性，诉确诊非哺乳期乳腺炎 1 年，B超提示 2 × 3 cm 良性肿块，患者半年内未接受治疗。查体：触诊肿块大小 2 × 2 cm，血管充盈征阴性，皮肤外观与正常无异，疼痛自评 0 分，压痛 0 分，日常工作生活中无任何影响，生活质量影响无。</p>
-        <button onclick="toggleAnswer('answer2')">查看标准答案</button>
+        <div class="placeholder">Figure refference</div>
+        <p>A 33-year-old woman presented with a one-year history of diagnosed non-lactational mastitis. An ultrasound scan revealed a 2 × 3 cm benign mass; the patient had not received any treatment in the past six months. Physical examination: on palpation, the mass measured 2 × 2 cm; there was no vascular filling sign; the skin appeared normal; the patient reported a pain score of 0 and tenderness of 0; there was no impact on her daily work or life, and her quality of life was unaffected.</p>
+        <button onclick="toggleAnswer('answer2')">View the correct answers</button>
         <div id="answer2" class="case-answer">
-          <p><strong>标准答案：</strong></p>
-          <p>M-score-a = 病灶大小 1 分 + 红斑 0 分 + 瘘管/溃破 0 分 + 疼痛（患者自评）0 分 + 生活质量影响 0 分 = <strong>1 分</strong>。</p>
-          <p>M-score-t = 病灶大小 1 分 + 红斑 0 分 + 瘘管/溃破 0 分 + 疼痛（压痛）0 分 + 生活质量影响 0 分 = <strong>1 分</strong>。</p>
-          <p><strong>解释：</strong>患者无活动性炎症表现，M-active-score = 0。根据建议定义，M-score-t ≤ 1，可认为达到 Resolution；M-active-score = 0，可认为达到 inflammatory remission。</p>
+          <p><strong>Correct answers：</strong></p>
+          <p>M-score-a = Mass size 1 point + Erythema 0 points + Fistula/ulceration 0 points + Pain (patient self-reported) 0 points + Impact on quality of life 0 points = <strong>1 </strong>。</p>
+          <p>M-score-t = Mass size 1 point + Erythema 0 points + Fistula/ulceration 0 points + Pain (tenderness) 0 points + Impact on quality of life 0 points = <strong>1 </strong>。</p>
+          <p><strong>Explanation：</strong>The patient shows no signs of active inflammation; the M-active-score is 0. According to the proposed definitions, an M-score-t of ≤ 1 is considered to indicate resolution, whilst an M-active-score of 0 is considered to indicate inflammatory remission.</p>
         </div>
       </div>
 
       <div class="case-box">
         <h3>Case 3</h3>
-        <div class="placeholder">图片参考：请替换为去标识化图片</div>
-        <p>35岁女性，诉确诊非哺乳期乳腺炎 3 个月，B超提示 5 × 8 cm 良性肿块，患者已接受 2 周抗结核治疗，效果不佳。查体：触诊肿块大小 8 × 6 cm，血管充盈征阳性，皮肤肿块处破溃，疼痛自评 7 分，压痛 10 分，日常工作生活中经常需要处理伤口，严重时更换衣物困难，入睡困难，对疾病状态感到焦虑，生活质量影响重。</p>
-        <button onclick="toggleAnswer('answer3')">查看标准答案</button>
+        <div class="placeholder">Figure refference</div>
+        <p>A 35-year-old woman presenting with a three-month history of diagnosed non-lactational mastitis. Ultrasound revealed a 5 × 8 cm benign mass. The patient has undergone two weeks of anti-tuberculosis treatment with poor results. Physical examination: Palpation revealed a mass measuring 8 × 6 cm with positive vascular filling. The skin over the mass had ulcerated. The patient rated her pain as 7 on a scale of 1 to 10 and tenderness as 10. She frequently needs to dress the wound in her daily life; at its worst, she finds it difficult to change her clothes and has trouble sleeping. She feels anxious about her condition, and her quality of life is significantly impaired.</p>
+        <button onclick="toggleAnswer('answer3')">View the correct answers</button>
         <div id="answer3" class="case-answer">
-          <p><strong>标准答案：</strong></p>
-          <p>M-score-a = 病灶大小 2 分 + 红斑 2 分 + 瘘管/溃破 2 分 + 疼痛（患者自评）2 分 + 生活质量影响 2 分 = <strong>10 分</strong>。</p>
-          <p>M-score-t = 病灶大小 2 分 + 红斑 2 分 + 瘘管/溃破 2 分 + 疼痛（压痛）2 分 + 生活质量影响 2 分 = <strong>10 分</strong>。</p>
-          <p><strong>解释：</strong>患者存在大病灶、活动性红斑、破溃流脓、重度疼痛及明显生活质量受损，提示疾病状态严重，需进一步评估并及时干预。</p>
+          <p><strong>Correct answers：</strong></p>
+          <p>M-score-a = Mass size 2 points + Erythema 2 points + Fistula/ulceration 2 points + Pain (patient self-reported) 2 points + Impact on quality of life 2 points = <strong>10 </strong>。</p>
+          <p>M-score-t = Mass size 2 points + Erythema 2 points + Fistula/ulceration 2 points + Pain (tenderness) 2 points + Impact on quality of life 2 points = <strong>10 </strong>。</p>
+          <p><strong>Explanation：</strong>The patient presents with extensive lesions, active erythema, ulceration and pus discharge, severe pain and a marked impairment in quality of life, indicating a serious condition that requires further assessment and prompt intervention.</p>
         </div>
       </div>
     </section>
 
     <section id="citation" class="card">
-      <h2>六、引用与版本说明</h2>
-      <p><strong>工具名称：</strong>M-score Online Assessment and Training Tool</p>
-      <p><strong>版本：</strong>Version 0.1 draft</p>
-      <p><strong>用途：</strong>科研、教学与评分培训。</p>
-      <p><strong>建议引用格式：</strong>作者. M-score Online Assessment and Training Tool. Version 1.0. Year. URL / DOI.</p>
+      <h2>Ⅵ Citations and Version Notes</h2>
+      <p><strong>Name：</strong>M-score clinical Assessment system</p>
+      <p><strong>Version：</strong>Version 0.1 draft</p>
+      <p><strong>Usage：</strong>Clinical judgement, research and training.</p>
+      <p><strong>Suggested citation format：</strong>Kai Chen. M-score clinical Assessment system. Version *. Year*. URL / DOI.</p>
       <div class="warning">
-        本工具为研究和教育用途，不替代临床医生判断。请勿输入任何可识别患者身份的信息。正式发表前，请根据论文最终定义同步更新网页内容、版本号和引用格式。
+        !!!!!!!!
       </div>
     </section>
   </main>
@@ -519,27 +529,27 @@
 
       let interpretation = '';
       if (resolutionT && inflammatoryRemission) {
-        interpretation = '根据当前建议定义，患者达到 Resolution，且达到 inflammatory remission。';
+        interpretation = 'According to the current definition, the patient has achieved resolution and inflammatory remission.';
       } else if (resolutionT && !inflammatoryRemission) {
-        interpretation = 'M-score-t 达到 Resolution 阈值，但仍存在炎症活动性评分，建议结合临床复核。';
+        interpretation = 'The M-score-t has reached the resolution threshold, but there is still a score indicating active inflammation; clinical review is recommended.';
       } else if (!resolutionT && inflammatoryRemission) {
-        interpretation = '炎症活动性评分为 0，但总严重程度评分仍未达到 Resolution 阈值，可能存在残余肿块或生活质量影响。';
+        interpretation = 'The inflammatory activity score is 0, but the total severity score has not yet reached the resolution threshold; there may be residual masses or an impact on quality of life.';
       } else {
-        interpretation = '当前评分未达到建议的 Resolution 或 inflammatory remission 标准。';
+        interpretation = 'The current score does not meet the recommended criteria for resolution or inflammatory remission.';
       }
 
       const resultDiv = document.getElementById('scoreResult');
       resultDiv.style.display = 'block';
       resultDiv.innerHTML = `
-        <h3>评分结果</h3>
-        <p><strong>M-score-a：</strong>${mScoreA} 分</p>
-        <p><strong>M-score-t：</strong>${mScoreT} 分</p>
-        <p><strong>M-active-score：</strong>${mActive} 分</p>
+        <h3>Rating results</h3>
+        <p><strong>M-score-a：</strong>${mScoreA} Points</p>
+        <p><strong>M-score-t：</strong>${mScoreT} Points</p>
+        <p><strong>M-active-score：</strong>${mActive} Points</p>
         <hr />
-        <p><strong>Resolution based on M-score-t ≤ 1：</strong>${resolutionT ? '是' : '否'}</p>
-        <p><strong>Alternative reference based on M-score-a ≤ 1：</strong>${resolutionA ? '是' : '否'}</p>
-        <p><strong>Inflammatory remission based on M-active-score = 0：</strong>${inflammatoryRemission ? '是' : '否'}</p>
-        <p><strong>解释：</strong>${interpretation}</p>
+        <p><strong>Resolution based on M-score-t ≤ 1：</strong>${resolutionT ? 'YES' : 'NO'}</p>
+        <p><strong>Alternative reference based on M-score-a ≤ 1：</strong>${resolutionA ? 'YES' : 'NO'}</p>
+        <p><strong>Inflammatory remission based on M-active-score = 0：</strong>${inflammatoryRemission ? 'YES' : 'NO'}</p>
+        <p><strong>Explanation：</strong>${interpretation}</p>
       `;
     }
 
