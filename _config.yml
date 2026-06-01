@@ -1,0 +1,16 @@
+title: "M-Score Clinical Assessment System"
+description: >-
+  A standardised severity scoring system for non-puerperal / granulomatous mastitis.
+  Includes online scoring, training cases, and clinical image atlas.
+baseurl: ""
+url: ""
+markdown: kramdown
+plugins: []
+
+# ── Academic metadata ──
+author: "Kai Chen"
+lang: en
+exclude:
+  - README.md
+  - .gitignore
+  - clip/
